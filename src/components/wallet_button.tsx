@@ -26,7 +26,7 @@ const WalletButton = () => {
 
   return (
     <Container>
-      <Button onClick={handleClick}>{account ? getShortWalletAddress(account) : 'Connect'}</Button>
+      <Button onClick={handleClick}>{account ? getShortWalletAddress(account) : 'Connect Wallet'}</Button>
     </Container>
   );
 };

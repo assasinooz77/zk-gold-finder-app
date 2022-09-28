@@ -4,6 +4,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import styled from 'styled-components';
 
 import Header from '../components/header';
+import Game from './game';
 
 const Container = styled.div`
   position: relative;
@@ -21,7 +22,9 @@ const Content = styled.div`
 const Pages = () => (
   <Container>
     <Header />
-    <Content />
+    <Content>
+      <Game />
+    </Content>
     <ToastContainer />
   </Container>
 );
