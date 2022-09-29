@@ -15,3 +15,8 @@ interface Window {
   rmlCalls?: any;
   rml?: any;
 }
+
+declare module 'snarkjs';
+declare module 'circom';
+declare module 'circomlib';
+declare module 'ffjavascript';

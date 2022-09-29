@@ -3,8 +3,6 @@ import React from 'react';
 
 import styled from 'styled-components';
 
-import WalletButton from './wallet_button';
-
 const Container = styled.div`
   position: relative;
   display: flex;
@@ -18,7 +16,6 @@ const Container = styled.div`
 const Header: React.FC = () => (
   <Container>
     <h2>ZK Gold Finder</h2>
-    <WalletButton />
   </Container>
 );
 

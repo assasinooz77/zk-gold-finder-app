@@ -1,12 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-import { Web3ReactProvider } from '@web3-react/core';
 import { Buffer } from 'buffer';
 
-import App from './App';
+import Pages from './pages';
 import reportWebVitals from './reportWebVitals';
-import getLibrary from './utils/get_library';
 
 import './index.css';
 
@@ -15,9 +13,7 @@ window.Buffer = window.Buffer || Buffer;
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
   <React.StrictMode>
-    <Web3ReactProvider getLibrary={getLibrary}>
-      <App />
-    </Web3ReactProvider>
+    <Pages />
   </React.StrictMode>
 );
 

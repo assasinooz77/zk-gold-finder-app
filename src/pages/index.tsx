@@ -1,6 +1,4 @@
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-
+/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import styled from 'styled-components';
 
 import Header from '../components/header';
@@ -25,7 +23,6 @@ const Pages = () => (
     <Content>
       <Game />
     </Content>
-    <ToastContainer />
   </Container>
 );
 
