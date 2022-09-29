@@ -28,7 +28,8 @@ async function exportCallDataPlonk(_proof: any, _publicSignals: any) {
 
 export async function verifyByWeb3(contractAddress: string, targetX: number, targetY: number) {
   const proofStr = stringifyBigInts(Proof);
-  const publicSignalsStr = stringifyBigInts([targetX, targetY, GOLD_HASH[0], GOLD_HASH[1], targetX, targetY]);
+  const data1 = [1, GOLD_HASH[0], GOLD_HASH[1], targetX, targetY];
+  const publicSignalsStr = stringifyBigInts(data1);
 
   const { proof, publicSignals } = await exportCallDataPlonk(proofStr, publicSignalsStr);
 
